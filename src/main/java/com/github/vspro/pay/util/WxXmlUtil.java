@@ -1,6 +1,5 @@
 package com.github.vspro.pay.util;
 
-import com.alibaba.fastjson.JSON;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import org.dom4j.*;
@@ -193,26 +192,5 @@ public class WxXmlUtil {
         }
         return map;
     }
-
-
-    public static void main(String[] args) throws DocumentException {
-        String xml = "<xml>             \n" +
-                "\t<a>a</a>      \n" +
-                "\t<b>b</b>      \n" +
-                "\t<c>           \n" +
-                "\t\t<d>d</d>  \n" +
-                "\t\t<e>e</e>  \n" +
-                "\t</c>          \n" +
-                "\t<c>           \n" +
-                "\t\t<g>g</g>  \n" +
-                "\t\t<h>h</h>  \n" +
-                "\t</c>          \n" +
-                "</xml>            ";
-        System.out.println(JSON.toJSONString(toMap(xml)));
-    }
-
-
-
-
 
 }
